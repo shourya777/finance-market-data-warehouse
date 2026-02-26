@@ -1,0 +1,85 @@
+# Market Data Warehouse Modelling Layer
+
+## Overview
+This project implements a production-style financial data warehouse modelling layer designed to standardise market data KPIs and enable consistent analytical reporting.
+
+The warehouse simulates institutional market data environments similar to those used in financial data platforms, where pricing data must be reliable, scalable, and governed before consumption by analytics teams.
+
+---
+
+## Project Objectives
+- Standardise financial KPI definitions across datasets
+- Design reusable fact and dimension models
+- Optimise analytical queries for large-scale market data
+- Implement validation checks for data governance
+- Provide clean, analytics-ready datasets
+
+---
+
+## Architecture
+
+Raw Market Data  
+→ Staging Layer  
+→ Dimension Models  
+→ Fact Tables  
+→ KPI / Metrics Layer  
+→ Validation & Governance  
+
+---
+
+## Data Model
+
+### Fact Tables
+- `fct_market_prices` — daily asset price observations
+
+### Dimension Tables
+- `dim_asset` — asset metadata (ticker, sector, exchange)
+- `dim_date` — calendar attributes for time-based analytics
+
+---
+
+## KPI Layer
+Reusable financial metrics built from governed warehouse models:
+
+- Daily Returns
+- Moving Averages
+- Price Trends
+- Volume Indicators
+
+These KPIs act as a **single source of truth** for downstream reporting.
+
+---
+
+## Data Governance & Validation
+Validation queries ensure warehouse reliability:
+
+- Not-null constraints
+- Duplicate detection
+- Referential integrity checks
+- Data consistency validation
+
+---
+
+## Technology Stack
+- Google BigQuery
+- SQL
+- Python (data ingestion)
+- GitHub
+- GitHub Actions (CI)
+
+
+## Example Analytical Use Case
+Analysts can directly query curated KPI tables to evaluate asset performance without redefining business logic, improving reporting consistency and reducing analytical duplication.
+
+---
+
+## Future Improvements
+- Incremental data loading
+- Automated scheduling
+- dbt implementation
+- Dashboard integration (Power BI / Looker Studio)
+
+---
+
+## Author
+Financial Data Warehouse Portfolio Project
