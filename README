@@ -1,85 +1,137 @@
-# Market Data Warehouse Modelling Layer
+# 📈 Market Data Warehouse Modelling Layer
 
-## Overview
-This project implements a production-style financial data warehouse modelling layer designed to standardise market data KPIs and enable consistent analytical reporting.
-
-The warehouse simulates institutional market data environments similar to those used in financial data platforms, where pricing data must be reliable, scalable, and governed before consumption by analytics teams.
+Production-style financial data warehouse built using **BigQuery + SQL** to standardise market data modelling, KPI definitions, and analytical governance.
 
 ---
 
-## Project Objectives
-- Standardise financial KPI definitions across datasets
-- Design reusable fact and dimension models
-- Optimise analytical queries for large-scale market data
-- Implement validation checks for data governance
-- Provide clean, analytics-ready datasets
+## 🚀 Project Summary
+
+Financial institutions rely on trusted market datasets to power analytics, research, and trading decisions.  
+This project simulates a **Bloomberg-style market data modelling layer**, transforming raw pricing data into governed, analytics-ready financial metrics.
+
+The warehouse ensures:
+- Consistent KPI definitions
+- Scalable analytical querying
+- Reliable financial reporting
+- Reusable data models
 
 ---
 
-## Architecture
+## 🏗️ Architecture
+## 🏗️ Architecture
 
-Raw Market Data  
-→ Staging Layer  
-→ Dimension Models  
-→ Fact Tables  
-→ KPI / Metrics Layer  
-→ Validation & Governance  
 
----
+Raw Market Data
+↓
+Staging Layer
+↓
+Dimension Models
+↓
+Fact Tables
+↓
+Metrics / KPI Layer
+↓
+Validation & Governance
 
-## Data Model
-
-### Fact Tables
-- `fct_market_prices` — daily asset price observations
-
-### Dimension Tables
-- `dim_asset` — asset metadata (ticker, sector, exchange)
-- `dim_date` — calendar attributes for time-based analytics
 
 ---
 
-## KPI Layer
-Reusable financial metrics built from governed warehouse models:
+## 🧱 Warehouse Modelling Approach
 
+### ⭐ Staging Layer
+Standardises raw financial datasets:
+- Data type cleaning
+- Timestamp alignment
+- Naming conventions
+
+### ⭐ Dimension Models
+Reusable business entities:
+- `dim_asset`
+- `dim_date`
+
+### ⭐ Fact Tables
+Core analytical dataset:
+- `fct_market_prices`
+
+Designed for scalable time-series analysis.
+
+### ⭐ Metrics Layer
+Centralised financial KPIs:
 - Daily Returns
 - Moving Averages
 - Price Trends
 - Volume Indicators
 
-These KPIs act as a **single source of truth** for downstream reporting.
+Acts as a **single source of analytical truth**.
 
 ---
 
-## Data Governance & Validation
-Validation queries ensure warehouse reliability:
+## ✅ Data Governance
 
-- Not-null constraints
-- Duplicate detection
-- Referential integrity checks
-- Data consistency validation
+Validation queries enforce warehouse reliability:
 
----
-
-## Technology Stack
-- Google BigQuery
-- SQL
-- Python (data ingestion)
-- GitHub
-- GitHub Actions (CI)
-
-
-## Example Analytical Use Case
-Analysts can directly query curated KPI tables to evaluate asset performance without redefining business logic, improving reporting consistency and reducing analytical duplication.
+- Null value checks  
+- Duplicate detection  
+- Referential integrity validation  
+- Data consistency monitoring  
 
 ---
 
-## Future Improvements
-- Incremental data loading
-- Automated scheduling
-- dbt implementation
-- Dashboard integration (Power BI / Looker Studio)
+## ⚡ Performance Optimisation
+
+Warehouse optimisation techniques include:
+
+- Partitioned time-series tables
+- Clustered analytical dimensions
+- Query cost reduction strategies
+- Modular transformation logic
 
 ---
 
-## Author
-Financial Data Warehouse Portfolio Project
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| Warehouse | Google BigQuery |
+| Transformation | SQL |
+| Ingestion | Python |
+| Version Control | GitHub |
+| CI / Quality | GitHub Actions |
+
+---
+
+## 📂 Repository Structure
+market-data-warehouse/
+│
+├── docs/
+├── sql/
+│ ├── staging/
+│ ├── dimensions/
+│ ├── facts/
+│ ├── metrics/
+│ └── validation/
+├── scripts/
+└── data/
+
+---
+
+## 📊 Analytical Use Case
+
+Analysts query curated KPI tables directly without redefining financial logic, enabling consistent performance analysis across assets and reporting teams.
+
+---
+
+## 🔮 Future Enhancements
+
+- Incremental warehouse loading
+- Automated pipeline scheduling
+- dbt transformation framework
+- Dashboard integration
+- Data freshness monitoring
+
+---
+
+## 👤 Author
+
+Financial Data Engineering Portfolio Project  
+Designed to demonstrate production-grade warehouse modelling practices.
