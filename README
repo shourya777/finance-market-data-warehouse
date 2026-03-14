@@ -135,3 +135,9 @@ Analysts query curated KPI tables directly without redefining financial logic, e
 
 Financial Data Engineering Portfolio Project  
 Designed to demonstrate production-grade warehouse modelling practices.
+
+## Current Progress
+- Loaded raw market data into BigQuery
+- Built staging, dimension, and fact tables
+- Created a KPI layer for daily returns
+- Added data validation checks for nulls and duplicates
