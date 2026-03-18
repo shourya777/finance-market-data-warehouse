@@ -1,0 +1,35 @@
+📊 Financial KPI Dashboard (Streamlit)
+
+A lightweight, user-friendly data application built with Streamlit to automate financial KPI analysis and reporting. This tool enables users to upload datasets, explore key metrics, and generate insights without needing technical expertise.
+
+🚀 Overview
+
+This application is designed to simplify financial analysis workflows by:
+
+Automating KPI calculations
+
+Providing interactive data exploration
+
+Enabling quick visualisation of trends and performance
+
+Supporting self-service analytics for business users
+
+It demonstrates how data engineering + lightweight web apps can improve decision-making and operational efficiency.
+
+✨ Features
+
+📂 Upload CSV datasets
+
+👀 Preview and explore raw data
+
+🎯 Dynamic KPI selection (e.g., revenue, cost)
+
+📊 KPI summary (Total, Average, Count)
+
+📈 Time-series trend visualisation
+
+🔍 Category-based filtering
+
+📋 Aggregated breakdown by category
+
+⬇️ Download filtered data
