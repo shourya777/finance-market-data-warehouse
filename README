@@ -3,6 +3,23 @@
 Production-style financial data warehouse built using **BigQuery + SQL** to standardise market data modelling, KPI definitions, and analytical governance.
 
 ---
+## Dashboard Preview
+
+![Market Overview](docs/dashboard-overview.png)
+
+![Daily Return](docs/daily-return-analysis.png)
+
+![Moving Average](docs/moving-average-analysis.png)
+
+
+### What it shows
+- Latest asset-level market performance across tracked financial instruments
+- Governed KPIs including daily return and 7-day moving average
+- Clean reporting output from joined fact, dimension, and metrics layers
+- A simple finance-style view designed for downstream analysis and stakeholder reporting
+
+
+---
 
 ## 🚀 Project Summary
 
@@ -119,17 +136,6 @@ market-data-warehouse/
 
 Analysts query curated KPI tables directly without redefining financial logic, enabling consistent performance analysis across assets and reporting teams.
 
----
-
-## 🔮 Future Enhancements
-
-- Incremental warehouse loading
-- Automated pipeline scheduling
-- dbt transformation framework
-- Dashboard integration
-- Data freshness monitoring
-
----
 
 ## 👤 Author
 
